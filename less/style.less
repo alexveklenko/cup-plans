@@ -1,0 +1,57 @@
+@import (less) "../css/normalize.css";
+@import (less) "../css/layout.css";
+body{
+	font: 400 20px 'Miso', Arial, Helvetica, sans-serif;
+}
+
+.ba-cups {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__item {
+		margin: 15px;
+		padding: 10px;
+		text-align: center;
+		border-radius: 5px;
+		padding: 30px 100px;
+		background: #fff;
+		max-width: 360px;
+		box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+		&--gold {
+			& img {
+				margin: 20px 0 15px;
+			}
+		}
+	}
+	& h1 {
+		font-size: 70px;
+		color: #02995B;
+		margin: 10px;
+	}
+	& h2 {
+		font-size: 56px;
+		font-weight: normal;
+		color: #333;
+		margin: 20px;
+	}
+	& p {
+		font-family: 'Lato', Arial, Helvetica, sans-serif;
+	}
+	img {
+		margin-right: -18px;
+	}
+}
+.ba-wrapper {
+	padding: 50px 30px;
+	background: #FDDE7E;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+@media all and (max-width: 1220px) {
+	.ba-wrapper {
+		flex-direction: column;
+	}
+}
